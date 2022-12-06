@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "hello root" > 1-hello_you
+echo "hello root"
