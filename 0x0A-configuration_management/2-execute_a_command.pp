@@ -1,8 +1,8 @@
 # Kills a process name killmenow
 
 exec { 'killmenow':
-  path     => '/usr/bin:/bin',
-  command  => 'pkill killmenow',
+  command     => 'pkill killmenow',
+  path        => '/usr/bin:/bin',
   onlyif      => 'pgrep killmenow',
   refreshonly => true,
 }
