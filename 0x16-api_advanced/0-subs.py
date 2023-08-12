@@ -1,8 +1,15 @@
 #!/usr/bin/python3
+"""
+0-subs.py
+"""
 
 
 def number_of_subscribers(subreddit):
+    """
+    function that queries API
+    """
     import requests
+
     sub_number = requests.get(
         "https://www.reddit.com/r/{}/about.json"
         .format(subreddit),
