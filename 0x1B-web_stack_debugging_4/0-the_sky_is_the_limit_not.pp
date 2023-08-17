@@ -1,4 +1,6 @@
-# This Puppet manifest executes Apache Bench to perform load testing on a URL.
-# exec { 'run_apache_bench':
-#   command => '/usr/bin/ab -n 2000 -c 100 http://172.17.0.3/',
-#   }   
+# Fix request
+# exec { 'fix-file':
+#   path     => '/usr/bin:/usr/sbin:/bin',
+#     provider => shell,
+#       command  => "sed -i 's/-n 15/-n 2019/g' /etc/default/nginx && sudo service nginx restart",
+#       }
